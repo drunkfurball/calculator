@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Calculator</title>
+		<meta charset="UTF-8">
+		<meta name="keywords" content="Calculator, JavaScript app">
+		<meta name="description" content="Calculator program written in JavaScript">
+		<meta name="author" content="Murph Strange">
+		<!--<link rel="icon" type="image/png" href="favicon.ico">-->
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="script.js"></script>
+	</head>
+	<body onload="displ(0)">
+		<div id="container">
+			<p id="display">
+				000000000000
+			</p>
+			<table>
+				<tr>
+					<td class="btn" id="" onclick="displ('MC')">MC</td>
+					<td class="btn" id="" onclick="displ('MR')">MR</td>
+					<td class="btn" id="" onclick="displ('MS')">MS</td>
+					<td class="btn" id="" onclick="displ('M+')">M+</td>
+					<td class="btn" id="" onclick="displ('M-')">M-</td>
+				</tr>
+				<tr>
+					<td class="btn" id="" onclick="">&larr;</td>
+					<td class="btn" id="" onclick="ce_btn()">CE</td>
+					<td class="btn" id="" onclick="c_btn()">C</td>
+					<td class="btn" id="" onclick="">+/-</td>
+					<td class="btn" id="" onclick="">&radic;</td>
+				</tr>
+				<tr>
+					<td class="btn" id="" onclick="displ(numberButton(7))">7</td>
+					<td class="btn" id="" onclick="displ(numberButton(8))">8</td>
+					<td class="btn" id="" onclick="displ(numberButton(9))">9</td>
+					<td class="btn" id="" onclick="operationButton('/')">/</td>
+					<td class="btn" id="" onclick="percent()">%</td>
+				</tr>
+				<tr>
+					<td class="btn" id="" onclick="displ(numberButton(4))">4</td>
+					<td class="btn" id="" onclick="displ(numberButton(5))">5</td>
+					<td class="btn" id="" onclick="displ(numberButton(6))">6</td>
+					<td class="btn" id="" onclick="operationButton('*')">*</td>
+					<td class="btn" id="" onclick="recipricator()">1/x</td>
+				</tr>
+				<tr>
+					<td class="btn" id="" onclick="displ(numberButton(1))">1</td>
+					<td class="btn" id="" onclick="displ(numberButton(2))">2</td>
+					<td class="btn" id="" onclick="displ(numberButton(3))">3</td>
+					<td class="btn" id="" onclick="operationButton('-')">-</td>
+					<td class="btn" id="" onclick="execute()" rowspan=2>=</td>
+				</tr>
+				<tr>
+					<td class="btn" id="" onclick="displ(numberButton(0))" colspan=2>0</td>
+					<td class="btn" id="" onclick="dec_btn()">.</td>
+					<td class="btn" id="" onclick="operationButton('+')">+</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
